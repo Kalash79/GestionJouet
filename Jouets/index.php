@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 <section class="hero">
-    <h1>Bienvenue sur Mon Magasin de Jouets</h1>
+    <h1>Bienvenue sur notre Magasin de Jouets</h1>
         <p>Optimisez la gestion de votre magasin de jouets avec notre solution intuitive.</p>
     <a href="/Jouets/produits/index.php" class="cta-button">Découvrir les produits</a>
 </section>
