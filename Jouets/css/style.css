@@ -1,5 +1,9 @@
 /* Style de base */
 
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -38,9 +42,49 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-section {
-    text-align: center;
+.hero { 
+    text-align: center; 
+    /* background: #35424a; */
+    padding: 80px 20px; 
+    color: #35424a;
 }
+.cta-button { 
+    /* background-color: #ff6600;  */
+    background-color: #35424a;
+    color: white; 
+    padding: 15px 30px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    display: inline-block; 
+}
+.cta-button:hover {
+    /* background-color: #cc5500;  */
+    background-color: #2c3e50;
+}
+.section { 
+    padding: 50px 20px; 
+    text-align: center; 
+}
+.features-container{
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+.feature-card {
+    background: white;
+    padding: 20px; 
+    border-radius: 10px; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+.hero img {
+    width: 100%;
+    height: auto; /* Conserve les proportions */
+    display: block;
+}
+
 
 main {
     padding: 20px;
