@@ -29,6 +29,7 @@ CREATE TABLE products (
 CREATE TABLE orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
+    product_ids JSON,
     order_date DATETIME DEFAULT CURRENT_TIMESTAMP,
     status ENUM('en attente', 'expediee', 'annulee') DEFAULT 'en attente',
     FOREIGN KEY (customer_id) REFERENCES customers(id)
@@ -51,9 +52,9 @@ INSERT INTO products (name, description, price, stock, supplier_id) VALUES
 ('Puzzle 1000 pièces', 'Un puzzle de 1000 pièces avec une belle image.', 15.99, 15, 1),
 ('Balle rebondissante', 'Balle colorée qui rebondit très haut.', 5.99, 100, 2);
 
-INSERT INTO orders (customer_id, status) VALUES
-(1, 'en attente'),
-(2, 'expediee'),
-(3, 'annulee'),
-(1, 'expediee'),
-(2, 'en attente');
+INSERT INTO orders (customer_id, product_ids, status) VALUES
+(1, '[1, 2]', 'en attente'),
+(2, '[3]', 'expediee'),
+(3, '[1, 2]', 'annulee'),
+(1, '[2]', 'expediee'),
+(2, '[1, 3]', 'en attente');

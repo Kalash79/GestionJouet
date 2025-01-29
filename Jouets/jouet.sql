@@ -1,5 +1,5 @@
-CREATE DATABASE magasin_jouets;
-USE magasin_jouets;
+CREATE DATABASE magasin_Jouets;
+USE magasin_Jouets;
 
 -- Table des fournisseurs
 CREATE TABLE fournisseurs (

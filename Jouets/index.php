@@ -2,7 +2,7 @@
 
 <section class="hero">
     <h1>Bienvenue sur notre Magasin de Jouets</h1>
-        <p>Optimisez la gestion de votre magasin de jouets avec notre solution intuitive.</p>
+        <p>Optimisez la gestion de votre magasin de Jouets avec notre solution intuitive.</p>
     <a href="/Jouets/produits/index.php" class="cta-button">Découvrir les produits</a>
 </section>
 <hr>
